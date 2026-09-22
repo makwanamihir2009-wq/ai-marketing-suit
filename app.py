@@ -16,7 +16,7 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 def init_db():
     conn = sqlite3.connect('project_history.db')
     cursor = conn.cursor()
-    cursor.create_table('''
+    cursor.execute('''
         CREATE TABLE IF NOT EXISTS history (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             user TEXT,
