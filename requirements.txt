@@ -1,0 +1,5 @@
+google-generativeai
+matplotlib
+pypdf
+youtube-transcript-api
+reportlab
